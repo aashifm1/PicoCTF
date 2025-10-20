@@ -1,0 +1,18 @@
+
+same exploit as pwcrack4 --> used for loop
+
+exploit:
+for x in pos_pw_list:
+        if hash_pw(x) == correct_pw_hash:
+                print(x)
+
+result:
+865e --> password for the script
+
+
+make the level4_pw_check function as command --> then add the exploit code --> printed password
+
+boom!!!
+
+
+picoCTF{m45h_fl1ng1ng_2b072a90}

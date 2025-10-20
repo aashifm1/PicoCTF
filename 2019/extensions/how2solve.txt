@@ -1,0 +1,9 @@
+
+file flag.txt --> it ensures it is a png file
+renamed it to .png extension --> mv flag.txt flag.png
+
+open flag.png --> shows the flag in the image
+
+used tesseract to read the content in the image --> tesseract flag.png final-flag.txt
+
+

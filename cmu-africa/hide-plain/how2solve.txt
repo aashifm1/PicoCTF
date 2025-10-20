@@ -1,0 +1,10 @@
+
+echo "c3RlZ2hpZGU6Y0VGNmVuZHZjbVE9" | base64 --decode
+echo "cEF6endvcmQ=" | base64 -d
+# hint: steghide: pAzzword
+
+steghide extract -sf img.jpg -p pAzzword
+# found a file --> flag.txt
+
+cat flag.txt
+picoCTF{h1dd3n_1n_1m4g3_2ac27d95}

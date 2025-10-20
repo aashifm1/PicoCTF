@@ -1,0 +1,13 @@
+
+read the ciphertext
+it is in the format of picoCTF{} --> but the inside flag is ciphertext
+picoCTF{ynkooejcpdanqxeykjrbdofgkq}
+
+go to online caesar cipher decoder --> https://cryptii.com/pipes/caesar-cipher
+shifted 22 times where it returns some meaningful words
+
+copy and pasted the plaintext inside the picoCTF{}
+
+boom !!!
+
+flag: picoCTF{crossingtherubiconvfhsjkou}

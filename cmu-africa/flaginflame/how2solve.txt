@@ -1,0 +1,20 @@
+
+given file: logs.txt --> large dumped logs 
+
+hint: use base64 to decode to get image file.
+
+
+$ base64 -d logs.txt > decoded_output  <-- decoding part
+
+decoded_output --> contains PNG at top showing it is clearly a image
+changed the file to decodedimg.png
+
+opened the image manually --> where it shows some set of code
+code: 7069636F43544678666F72656E736963735F616E616C797369735F69735F616D617A696E675F32346431363839357D
+
+clearly it is a hex format and decoded with cyberchef
+
+picoCTF{forensics_analysis_is_amazing_24d16895} --> flag.txt
+
+
+

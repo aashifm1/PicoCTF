@@ -1,0 +1,12 @@
+
+gave login in first attempt with password given --> captured request using burpsuite.
+
+using captured request, i added "X-Forwarded-For"
+It is responsible for handling the ip address.
+
+everytime you brute force the password change the ipaddress too.
+
+behaviour of rate-limit is only 1.
+
+after several passwords, finally found the flag with pswd -> QPhhobaO
+picoCTF{xff_byp4ss_brut3_473b3fdd}

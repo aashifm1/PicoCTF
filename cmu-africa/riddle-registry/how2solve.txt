@@ -1,0 +1,7 @@
+
+# gave an pdf --> confidential.pdf
+
+strings confidential.pdf 
+
+echo "cGljb0NURntwdXp6bDNkX20zdGFkYXRhX2YwdW5kIV80MjQ0MGM3ZH0" | base64 -d
+picoCTF{puzzl3d_m3tadata_f0und!_42440c7d}
