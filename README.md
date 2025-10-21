@@ -1,13 +1,9 @@
 # PicoCTF
 
-### 🔗 My Profile: [aashifm](https://play.picoctf.org/users/aashifm)
+Interested in web exploitation
 
 
-### 🏁 Participated Events
-
-- PicoCTF @ CMU Africa  
-
-### ✅ Challenge Stats
+### Challenge Stats
 
 - 🟢 Easy: **58 solved**  
 - 🟡 Medium: **54 solved**  
